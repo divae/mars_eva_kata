@@ -17,8 +17,8 @@ describe 'Robot' do
         end
     end
 
-    context 'can move' do
-        it 'can go forward in same direction' do
+    context 'knows how to move ' do
+        it 'forward in same direction' do
             eye_x = 1
             eye_y = 0
             eva = Robot.new
@@ -29,7 +29,7 @@ describe 'Robot' do
 
             expect(position).to eq [eye_x,eye_y]
         end 
-        it 'can go backward in same direction' do
+        it 'backward in same direction' do
             eye_x = -1
             eye_y = 0
             eva = Robot.new
@@ -40,7 +40,7 @@ describe 'Robot' do
 
             expect(position).to eq [eye_x,eye_y]
         end
-        it 'can move 2 positions in in same direction' do
+        it 'various positions in in same direction' do
             eye_x = -2
             eye_y = 0
             eva = Robot.new
