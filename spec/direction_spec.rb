@@ -15,9 +15,9 @@ describe 'Direction' do
     context 'when it moves' do
         it 'knows how to do it in all directions' do
             direction = Direction.new
-            directions = ['f','f','S','f','f','E','f']
+            directions = ['f','f','S','f','f','E','f','W','b']
             cardinal_actually = direction.cardinal
-            axis_x = 1
+            axis_x = 2
             axis_y = 0
             next_position = [axis_x,axis_y]
             
