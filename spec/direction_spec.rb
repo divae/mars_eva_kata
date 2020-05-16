@@ -14,15 +14,15 @@ describe 'Direction' do
     end
     context 'knows what is the new point when' do
         it 'is facing north and is moving forward' do
-            directions = ['f','f']
             direction = Direction.new
+            directions = ['f','f']
             cardinal_actually = direction.cardinal
-            point = Point.new
             eye_x = 0
             eye_y = 2
             next_position = [eye_x,eye_y]
             
-            position = direction.change(directions)
+            direction.change(directions)
+            position = direction.position
 
             expect(position).to eq next_position
         end

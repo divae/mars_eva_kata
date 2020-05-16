@@ -1,11 +1,15 @@
 require './src/direction'
 
 class Direction
-    def initialize
+    def initialize()
+        @point = Point.new
         @cardinal_point = 'N'
     end
     def actually
         @cardinal_point
+    end
+    def position
+        @point.position
     end
     def cardinal
         @cardinal_point
@@ -27,7 +31,6 @@ class Direction
                 @point = @direction.right
             end
         end
-        @point
     end
 
     def select_direction
@@ -40,26 +43,26 @@ end
 
 class Nord 
     def initialize(point)
-        @point = Point.new
+        @point = point
     end
 
     def forward
         @point.increase_y
-        @point.position
+        @point
     end
 
     def backward
         @point.decrease_y
-        @point.position
+        @point
     end
 
     def left
         @point.decrease_x
-        @point.position
+        @point
     end
 
     def right
         @point.increase_x
-        @point.position
+        @point
     end
 end
