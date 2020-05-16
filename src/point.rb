@@ -24,8 +24,6 @@ class Point
         [@eye_x,@eye_y]
     end
 
-    private
-
     def increase_y
         @eye_y += 1
     end

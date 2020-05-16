@@ -7,6 +7,9 @@ class Robot
     def move(directions)
         change_direction(directions)
     end
+    def move_direction(directions)
+        @directon.change(directions)
+    end
 
     def position
         @point.position
