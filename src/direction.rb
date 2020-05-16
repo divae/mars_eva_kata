@@ -1,5 +1,5 @@
-require './src/direction'
-require './src/north'
+require './src/direction/north'
+require './src/direction/south'
 
 class Direction
     def initialize()
