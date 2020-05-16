@@ -17,7 +17,7 @@ describe 'Robot' do
         end
     end
 
-    context 'knows how to move ' do
+    context 'knows how to move' do
         it 'forward in same direction' do
             eye_x = 0
             eye_y = 1
