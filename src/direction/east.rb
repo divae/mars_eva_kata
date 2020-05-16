@@ -7,4 +7,9 @@ class East
         @point.increase_x
         @point
     end
+
+    def backward
+        @point.decrease_x
+        @point
+    end
 end
