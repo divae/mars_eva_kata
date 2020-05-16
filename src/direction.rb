@@ -1,5 +1,6 @@
 require './src/direction/north'
 require './src/direction/south'
+require './src/direction/east'
 
 class Direction
     def initialize()
@@ -23,6 +24,8 @@ class Direction
                 @direction = North.new(@point)
             when 'S'
                 @direction = South.new(@point)
+            when 'E'
+                @direction = East.new(@point)
             when 'f'
                 @point = @direction.forward
             when 'b'
