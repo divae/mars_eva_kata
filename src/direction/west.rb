@@ -17,4 +17,9 @@ class West
         @point.increase_y
         @point
     end
+
+    def right
+        @point.decrease_y
+        @point
+    end
 end
