@@ -8,6 +8,10 @@ class Point
         @eye_x += 1
     end
 
+    def backward
+        @eye_x -= 1
+    end
+
     def position
         [@eye_x,@eye_y]
     end

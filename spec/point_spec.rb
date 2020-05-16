@@ -22,5 +22,15 @@ describe 'Point' do
 
             expect(position).to eq next_position
         end
+
+        it 'backward advance one position' do
+            next_position = [-1,0]
+            point = Point.new
+
+            point.backward
+            position = point.position
+
+            expect(position).to eq next_position
+        end
     end
 end
