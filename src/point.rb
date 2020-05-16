@@ -4,10 +4,6 @@ class Point
         @eye_y = 0
     end
 
-    def right
-        increase_x
-    end
-
     def position
         [@eye_x,@eye_y]
     end
