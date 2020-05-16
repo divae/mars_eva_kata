@@ -27,5 +27,18 @@ describe 'East' do
 
             expect(position).to eq next_position
         end
+
+        it 'left increase axis y' do
+            axis_x = 0
+            axis_y = 1
+            next_position = [axis_x,axis_y]
+            point = Point.new
+            east = East.new(point)
+           
+            point = east.left
+            position = point.position
+
+            expect(position).to eq next_position
+        end
     end
 end

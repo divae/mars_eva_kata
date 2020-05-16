@@ -12,4 +12,9 @@ class East
         @point.decrease_x
         @point
     end
+
+    def left
+        @point.increase_y
+        @point
+    end
 end
