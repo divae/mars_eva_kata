@@ -1,6 +1,6 @@
 # 👋 ARRANGE
 
-## Candidate:
+## My Name:
 - 👩🏼‍🚀 Estela Medrano.
 
 ## One curiosity:
