@@ -17,8 +17,8 @@ describe 'Robot' do
         end
     end
 
-    context 'knows how to move' do
-        it 'forward in same direction' do
+    context 'knows how looking north to move' do
+        it 'forward' do
             eye_x = 0
             eye_y = 1
             eva = Robot.new
@@ -30,7 +30,7 @@ describe 'Robot' do
             expect(position).to eq [eye_x,eye_y]
         end 
 
-        it 'backward in same direction' do
+        it 'backward' do
             eye_x = 0
             eye_y = -1
             eva = Robot.new
@@ -42,19 +42,7 @@ describe 'Robot' do
             expect(position).to eq [eye_x,eye_y]
         end
 
-        it 'various positions in in same direction' do
-            eye_x = 0
-            eye_y = -2
-            eva = Robot.new
-            directions = ['b','b']
-
-            eva.move(directions)
-            position = eva.position
-
-            expect(position).to eq [eye_x,eye_y]
-        end 
-
-        it 'left in same direction' do
+        it 'left' do
             eye_x = -1
             eye_y = 0
             eva = Robot.new
@@ -66,7 +54,7 @@ describe 'Robot' do
             expect(position).to eq [eye_x,eye_y]
         end
 
-        it 'right in same direction' do
+        it 'right' do
             eye_x = 1
             eye_y = 0
             eva = Robot.new
@@ -77,5 +65,18 @@ describe 'Robot' do
 
             expect(position).to eq [eye_x,eye_y]
         end
+
+        
+        it 'various positions multiple stored positions' do
+            eye_x = 0
+            eye_y = -2
+            eva = Robot.new
+            directions = ['b','b']
+
+            eva.move(directions)
+            position = eva.position
+
+            expect(position).to eq [eye_x,eye_y]
+        end 
     end
 end
