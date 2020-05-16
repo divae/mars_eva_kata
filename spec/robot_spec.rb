@@ -22,7 +22,7 @@ describe 'Robot' do
             eye_x = 1
             eye_y = 0
             eva = Robot.new
-            directions = 'f'
+            directions = ['f']
 
             eva.move(directions)
             position = eva.position
@@ -33,7 +33,18 @@ describe 'Robot' do
             eye_x = -1
             eye_y = 0
             eva = Robot.new
-            directions = 'b'
+            directions = ['b']
+
+            eva.move(directions)
+            position = eva.position
+
+            expect(position).to eq [eye_x,eye_y]
+        end
+        it 'can move 2 positions in in same direction' do
+            eye_x = -2
+            eye_y = 0
+            eva = Robot.new
+            directions = ['b','b']
 
             eva.move(directions)
             position = eva.position

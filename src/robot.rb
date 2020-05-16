@@ -5,11 +5,13 @@ class Robot
     end
 
     def move(directions)
-        case directions
-        when 'f'
-            @point.forward
-        when 'b'
-            @point.backward
+        directions.each do |direction|
+            case direction
+            when 'f'
+                @point.forward
+            when 'b'
+                @point.backward
+            end
         end
     end
 
