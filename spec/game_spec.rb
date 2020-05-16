@@ -1,7 +1,10 @@
-describe 'Mars eva Word' do
+require './src/game'
+require './src/robot'
+
+describe 'Game Mars eva Word' do
     
     context 'when created' do
-        it 'Mars Eva only has one robot' do
+        it 'The world only has one robot' do
             type_robot = Robot
             game = Game.new
 
@@ -12,19 +15,4 @@ describe 'Mars eva Word' do
         end
     end
 
-end
-
-class Game
-    @robot
-    def generate_robot()
-        @robot ||= robot
-    end
-
-    private 
-    def robot
-        Robot.new
-    end
-end
-
-class Robot
 end
