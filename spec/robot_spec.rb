@@ -16,4 +16,16 @@ describe 'Robot' do
             expect(direction).to eq cardinal_point.actually
         end
     end
+
+    context 'can move' do
+        it 'can go forward in same direction' do
+            eva = Robot.new
+            directions = 'f'
+
+            eva.move(directions)
+            position = eva.position
+
+            expect(position).to eq [1,0]
+        end 
+    end
 end

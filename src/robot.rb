@@ -4,6 +4,13 @@ class Robot
         @direction = Direction.new
     end
 
+    def move(directions)
+        case directions
+        when 'f'
+            @point.forward
+        end
+    end
+
     def position
         @point.position
     end
@@ -11,4 +18,5 @@ class Robot
     def direction
         @direction.actually
     end
+
 end

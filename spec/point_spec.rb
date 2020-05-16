@@ -11,4 +11,16 @@ describe 'Point' do
             expect(position).to eq initial_position
         end
     end
+
+    context 'when change' do
+        it 'forward advance one position' do
+            next_position = [1,0]
+            point = Point.new
+
+            point.forward
+            position = point.position
+
+            expect(position).to eq next_position
+        end
+    end
 end
