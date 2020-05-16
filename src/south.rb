@@ -7,4 +7,9 @@ class South
         @point.decrease_y
         @point
     end
+
+    def backward
+        @point.increase_y
+        @point
+    end
 end
