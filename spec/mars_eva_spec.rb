@@ -1,15 +1,30 @@
 describe 'Mars eva Word' do
     
     context 'when created' do
-        it 'Mars Eva is the type Game' do
-            type_game = Game
-            mars_eva = Game.new.class
+        it 'Mars Eva only has one robot' do
+            type_robot = Robot
+            game = Game.new
 
-            expect(mars_eva).to be type_game
+            maria = game.generate_robot
+            eva = game.generate_robot
+
+            expect(maria).to be eva
         end
     end
 
 end
 
 class Game
+    @robot
+    def generate_robot()
+        @robot ||= robot
+    end
+
+    private 
+    def robot
+        Robot.new
+    end
+end
+
+class Robot
 end
