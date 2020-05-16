@@ -13,6 +13,8 @@ class Robot
                 @point.backward
             when 'l'
                 @point.left
+            when 'r'
+                @point.right
             end
         end
     end
