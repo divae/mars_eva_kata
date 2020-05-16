@@ -5,17 +5,17 @@ require './src/direction/east'
 class Direction
     def initialize()
         @point = Point.new
-        @cardinal_point = 'N'
+        @cardinal = 'N'
         @direction = North.new(@point)
     end
     def actually
-        @cardinal_point
+        @cardinal
     end
     def position
         @point.position
     end
     def cardinal
-        @cardinal_point
+        @cardinal
     end
     def change(directions)            
         directions.each do |direction|
