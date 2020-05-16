@@ -4,7 +4,9 @@ describe 'Point' do
     context 'when created' do
         it 'is in position 0.0' do
             point = Point.new
-            initial_position = [0,0]
+            eye_x = 0
+            eye_y = 0
+            initial_position = [eye_x,eye_y]
 
             position = point.position
 
@@ -14,7 +16,9 @@ describe 'Point' do
 
     context 'when change' do
         it 'forward advance one position' do
-            next_position = [1,0]
+            eye_x = 0
+            eye_y = 1
+            next_position = [eye_x,eye_y]
             point = Point.new
 
             point.forward
@@ -24,7 +28,9 @@ describe 'Point' do
         end
 
         it 'backward go back one position' do
-            next_position = [-1,0]
+            eye_x = 0
+            eye_y = -1
+            next_position = [eye_x,eye_y]
             point = Point.new
 
             point.backward

@@ -5,11 +5,11 @@ class Point
     end
 
     def forward
-        @eye_x += 1
+        @eye_y += 1
     end
 
     def backward
-        @eye_x -= 1
+        @eye_y -= 1
     end
 
     def left
