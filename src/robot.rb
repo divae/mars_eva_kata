@@ -5,6 +5,20 @@ class Robot
     end
 
     def move(directions)
+        change_direction(directions)
+    end
+
+    def position
+        @point.position
+    end
+
+    def direction
+        @direction.actually
+    end
+
+    private
+
+    def change_direction(directions)
         directions.each do |direction|
             case direction
             when 'f'
@@ -17,14 +31,6 @@ class Robot
                 @point.right
             end
         end
-    end
-
-    def position
-        @point.position
-    end
-
-    def direction
-        @direction.actually
     end
 
 end
