@@ -12,4 +12,9 @@ class South
         @point.increase_y
         @point
     end
+
+    def left
+        @point.increase_x
+        @point
+    end
 end
