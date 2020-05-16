@@ -1,6 +1,6 @@
 class Game
     @robot
-    def generate_robot()
+    def generate_robot
         @robot ||= robot
     end
 
