@@ -1,7 +1,7 @@
 require './src/north'
 
 describe 'North' do
-    context 'when' do
+    context 'when move to' do
         it 'forward increase eye y' do
             eye_x = 0
             eye_y = 1
