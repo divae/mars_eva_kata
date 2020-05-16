@@ -1,10 +1,10 @@
-describe 'Direction' do
-    context 'when created' do
-        it 'is direction north' do
-            direction = Direction.new
-            cardinal_point = 'N'
+require './src/direction'
 
-            expect(direction).to eq cardinal_point
-        end
+class Direction
+    def initialize
+        @cardinal_point = 'N'
+    end
+    def actually
+        @cardinal_point
     end
 end

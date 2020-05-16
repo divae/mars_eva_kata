@@ -1,5 +1,6 @@
 require './src/robot'
 require './src/point'
+require './src/direction'
 
 describe 'Robot' do
     context 'when created' do
