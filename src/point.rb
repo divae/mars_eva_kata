@@ -12,6 +12,10 @@ class Point
         @eye_x -= 1
     end
 
+    def left
+        @eye_x -= 1
+    end
+
     def position
         [@eye_x,@eye_y]
     end
