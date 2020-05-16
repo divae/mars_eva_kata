@@ -28,4 +28,17 @@ describe 'West' do
 
         expect(position).to eq next_position
     end
+
+    it 'left increase axis y' do
+        axis_x = 0
+        axis_y = 1
+        next_position = [axis_x,axis_y]
+        point = Point.new
+        west = West.new(point)
+       
+        point = west.left
+        position = point.position
+
+        expect(position).to eq next_position
+    end
 end

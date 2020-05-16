@@ -12,4 +12,9 @@ class West
         @point.increase_x
         @point
     end
+
+    def left
+        @point.increase_y
+        @point
+    end
 end
