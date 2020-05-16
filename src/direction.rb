@@ -16,12 +16,13 @@ class Direction
     def cardinal
         @cardinal_point
     end
-    def change(directions)
-
-        select_direction
-            
+    def change(directions)            
         directions.each do |direction|
             case direction
+            when 'N'
+                @direction = North.new(@point)
+            when 'S'
+                @direction = South.new(@point)
             when 'f'
                 @point = @direction.forward
             when 'b'
@@ -32,15 +33,5 @@ class Direction
                 @point = @direction.right
             end
         end
-    end
-
-    def select_direction
-        case @cardinal_point
-        when 'N'
-            @direction = North.new(@point)
-        when 'S'
-            @direction = South.new(@point)
-        end
-        print(@cardinal_point)
     end
 end
