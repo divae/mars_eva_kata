@@ -2,10 +2,10 @@ require './src/direction/north'
 
 describe 'North' do
     context 'when move to' do
-        it 'forward increase eye y' do
-            eye_x = 0
-            eye_y = 1
-            next_position = [eye_x,eye_y]
+        it 'forward increase axis y' do
+            axis_x = 0
+            axis_y = 1
+            next_position = [axis_x,axis_y]
             point = Point.new
             north = North.new(point)
            
@@ -15,10 +15,10 @@ describe 'North' do
             expect(position).to eq next_position
         end
 
-        it 'backward decrease eye y' do
-            eye_x = 0
-            eye_y = -1
-            next_position = [eye_x,eye_y]
+        it 'backward decrease axis y' do
+            axis_x = 0
+            axis_y = -1
+            next_position = [axis_x,axis_y]
             point = Point.new
             north = North.new(point)
             
@@ -28,10 +28,10 @@ describe 'North' do
             expect(position).to eq next_position
         end
 
-        it 'left decrease eye x' do
-            eye_x = -1
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+        it 'left decrease axis x' do
+            axis_x = -1
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             point = Point.new
             north = North.new(point)
             
@@ -41,10 +41,10 @@ describe 'North' do
             expect(position).to eq next_position
         end
 
-        it 'right increase eye x' do
-            eye_x = 1
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+        it 'right increase axis x' do
+            axis_x = 1
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             point = Point.new
             north = North.new(point)
            

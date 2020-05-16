@@ -2,10 +2,10 @@ require './src/direction/south'
 
 describe 'South' do
     context 'when move to' do
-        it 'forward decrease eye y' do
-            eye_x = 0
-            eye_y = -1
-            next_position = [eye_x,eye_y]
+        it 'forward decrease axis y' do
+            axis_x = 0
+            axis_y = -1
+            next_position = [axis_x,axis_y]
             point = Point.new
             south = South.new(point)
            
@@ -15,10 +15,10 @@ describe 'South' do
             expect(position).to eq next_position
         end
 
-        it 'backward increase eye y' do
-            eye_x = 0
-            eye_y = 1
-            next_position = [eye_x,eye_y]
+        it 'backward increase axis y' do
+            axis_x = 0
+            axis_y = 1
+            next_position = [axis_x,axis_y]
             point = Point.new
             south = South.new(point)
            
@@ -28,10 +28,10 @@ describe 'South' do
             expect(position).to eq next_position
         end
 
-        it 'left increase eye x' do
-            eye_x = 1
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+        it 'left increase axis x' do
+            axis_x = 1
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             point = Point.new
             south = South.new(point)
            
@@ -41,10 +41,10 @@ describe 'South' do
             expect(position).to eq next_position
         end
         
-        it 'right decrease eye x' do
-            eye_x = -1
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+        it 'right decrease axis x' do
+            axis_x = -1
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             point = Point.new
             south = South.new(point)
            

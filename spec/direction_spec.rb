@@ -17,9 +17,9 @@ describe 'Direction' do
             direction = Direction.new
             directions = ['f','f','S','f','f']
             cardinal_actually = direction.cardinal
-            eye_x = 0
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+            axis_x = 0
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             
             direction.change(directions)
             position = direction.position

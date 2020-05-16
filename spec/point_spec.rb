@@ -4,9 +4,9 @@ describe 'Point' do
     context 'when created' do
         it 'is in position 0.0' do
             point = Point.new
-            eye_x = 0
-            eye_y = 0
-            initial_position = [eye_x,eye_y]
+            axis_x = 0
+            axis_y = 0
+            initial_position = [axis_x,axis_y]
 
             position = point.position
 
@@ -15,10 +15,10 @@ describe 'Point' do
     end
 
     context 'when change' do
-        it 'increasing eye y' do
-            eye_x = 0
-            eye_y = 1
-            next_position = [eye_x,eye_y]
+        it 'increasing axis y' do
+            axis_x = 0
+            axis_y = 1
+            next_position = [axis_x,axis_y]
             point = Point.new
 
             point.increase_y
@@ -27,10 +27,10 @@ describe 'Point' do
             expect(position).to eq next_position
         end
 
-        it 'decreasing eye y' do
-            eye_x = 0
-            eye_y = -1
-            next_position = [eye_x,eye_y]
+        it 'decreasing axis y' do
+            axis_x = 0
+            axis_y = -1
+            next_position = [axis_x,axis_y]
             point = Point.new
 
             point.decrease_y
@@ -39,10 +39,10 @@ describe 'Point' do
             expect(position).to eq next_position
         end
 
-        it 'decreasing eye x' do
-            eye_x = -1
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+        it 'decreasing axis x' do
+            axis_x = -1
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             point = Point.new
 
             point.decrease_x
@@ -51,10 +51,10 @@ describe 'Point' do
             expect(position).to eq next_position
         end
 
-        it 'increasing eye x' do
-            eye_x = 1
-            eye_y = 0
-            next_position = [eye_x,eye_y]
+        it 'increasing axis x' do
+            axis_x = 1
+            axis_y = 0
+            next_position = [axis_x,axis_y]
             point = Point.new
 
             point.increase_x
