@@ -3,7 +3,7 @@ require './src/point'
 
 describe 'Direction' do
     context 'when created' do
-        it 'is direction north' do
+        it 'is looking north' do
             cardinal_point = 'N'
             direction = Direction.new
 
@@ -12,8 +12,8 @@ describe 'Direction' do
             expect(direction_actually).to eq cardinal_point
         end
     end
-    context 'knows what is the new point when' do
-        it 'is facing north and is moving forward' do
+    context 'knows what is the new point when is looking' do
+        it 'north and move forward twice' do
             direction = Direction.new
             directions = ['f','f']
             cardinal_actually = direction.cardinal
