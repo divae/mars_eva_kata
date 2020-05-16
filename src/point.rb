@@ -4,10 +4,6 @@ class Point
         @eye_y = 0
     end
 
-    def left
-        decrease_x
-    end
-
     def right
         increase_x
     end
