@@ -9,7 +9,7 @@ class Point
     end
 
     def backward
-        @eye_y -= 1
+        decrease_y
     end
 
     def left
@@ -28,5 +28,9 @@ class Point
 
     def increase_y
         @eye_y += 1
+    end
+
+    def decrease_y
+        @eye_y -= 1
     end
 end
