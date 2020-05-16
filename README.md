@@ -30,6 +30,7 @@ You’re part of the team that explores Mars by sending remotely controlled vehi
 - 👆👇 Implement commands that move Eva forward/backward.
 - 👈👉 Implement commands that turn Eva left/right.
 - 🌎 Implement wrapping from one edge of grid to another. (planets are spheres after all)
+- 🔃 Implement changes of direction('N', 'S', 'E', 'W') 
 
 # 💃 ASSERT
 ## Running Specs

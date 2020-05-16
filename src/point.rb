@@ -5,7 +5,7 @@ class Point
     end
 
     def forward
-        @eye_y += 1
+        increase_y
     end
 
     def backward
@@ -22,5 +22,11 @@ class Point
 
     def position
         [@eye_x,@eye_y]
+    end
+
+    private
+
+    def increase_y
+        @eye_y += 1
     end
 end
