@@ -11,6 +11,8 @@ class Robot
                 @point.forward
             when 'b'
                 @point.backward
+            when 'l'
+                @point.left
             end
         end
     end
