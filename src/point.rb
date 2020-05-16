@@ -13,7 +13,7 @@ class Point
     end
 
     def left
-        @eye_x -= 1
+        decrease_x
     end
 
     def right
@@ -34,9 +34,12 @@ class Point
         @eye_y -= 1
     end
     
-
     def increase_x
         @eye_x += 1
+    end
+
+    def decrease_x
+        @eye_x -= 1
     end
 
 end
