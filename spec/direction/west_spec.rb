@@ -15,4 +15,17 @@ describe 'West' do
             expect(position).to eq next_position
         end
     end
+
+    it 'forward increase axis x' do
+        axis_x = 1
+        axis_y = 0
+        next_position = [axis_x,axis_y]
+        point = Point.new
+        west = West.new(point)
+       
+        point = west.backward
+        position = point.position
+
+        expect(position).to eq next_position
+    end
 end
