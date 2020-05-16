@@ -12,8 +12,8 @@ describe 'Direction' do
             expect(direction_actually).to eq cardinal_point
         end
     end
-    context 'knows what is the new point when is looking' do
-        it 'north and move forward twice' do
+    context 'when it moves' do
+        it 'knows how to do it in all directions' do
             direction = Direction.new
             directions = ['f','f']
             cardinal_actually = direction.cardinal

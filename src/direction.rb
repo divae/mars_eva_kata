@@ -5,6 +5,7 @@ class Direction
     def initialize()
         @point = Point.new
         @cardinal_point = 'N'
+        @direction = North.new(@point)
     end
     def actually
         @cardinal_point
@@ -21,7 +22,6 @@ class Direction
             
         directions.each do |direction|
             case direction
-
             when 'f'
                 @point = @direction.forward
             when 'b'
@@ -38,6 +38,9 @@ class Direction
         case @cardinal_point
         when 'N'
             @direction = North.new(@point)
+        when 'S'
+            @direction = South.new(@point)
         end
+        print(@cardinal_point)
     end
 end
