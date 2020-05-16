@@ -17,7 +17,7 @@ class Point
     end
 
     def right
-        @eye_x += 1
+        increase_x
     end
 
     def position
@@ -33,4 +33,10 @@ class Point
     def decrease_y
         @eye_y -= 1
     end
+    
+
+    def increase_x
+        @eye_x += 1
+    end
+
 end
