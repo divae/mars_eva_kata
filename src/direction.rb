@@ -1,4 +1,5 @@
 require './src/direction'
+require './src/north'
 
 class Direction
     def initialize()
@@ -36,33 +37,7 @@ class Direction
     def select_direction
         case @cardinal_point
         when 'N'
-            @direction = Nord.new(@point)
+            @direction = North.new(@point)
         end
-    end
-end
-
-class Nord 
-    def initialize(point)
-        @point = point
-    end
-
-    def forward
-        @point.increase_y
-        @point
-    end
-
-    def backward
-        @point.decrease_y
-        @point
-    end
-
-    def left
-        @point.decrease_x
-        @point
-    end
-
-    def right
-        @point.increase_x
-        @point
     end
 end
