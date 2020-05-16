@@ -15,10 +15,10 @@ describe 'Direction' do
     context 'when it moves' do
         it 'knows how to do it in all directions' do
             direction = Direction.new
-            directions = ['f','f']
+            directions = ['f','f','S','f','f']
             cardinal_actually = direction.cardinal
             eye_x = 0
-            eye_y = 2
+            eye_y = 0
             next_position = [eye_x,eye_y]
             
             direction.change(directions)
