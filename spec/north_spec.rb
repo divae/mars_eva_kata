@@ -8,8 +8,21 @@ describe 'North' do
             next_position = [eye_x,eye_y]
             point = Point.new
             north = North.new(point)
-g
+           
             point = north.forward
+            position = point.position
+
+            expect(position).to eq next_position
+        end
+
+        it 'backward decrease eye y' do
+            eye_x = 0
+            eye_y = -1
+            next_position = [eye_x,eye_y]
+            point = Point.new
+            north = North.new(point)
+            
+            point = north.backward
             position = point.position
 
             expect(position).to eq next_position
