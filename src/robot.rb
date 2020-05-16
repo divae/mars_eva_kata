@@ -8,6 +8,8 @@ class Robot
         case directions
         when 'f'
             @point.forward
+        when 'b'
+            @point.backward
         end
     end
 

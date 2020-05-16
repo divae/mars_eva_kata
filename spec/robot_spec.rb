@@ -19,13 +19,26 @@ describe 'Robot' do
 
     context 'can move' do
         it 'can go forward in same direction' do
+            eye_x = 1
+            eye_y = 0
             eva = Robot.new
             directions = 'f'
 
             eva.move(directions)
             position = eva.position
 
-            expect(position).to eq [1,0]
+            expect(position).to eq [eye_x,eye_y]
+        end 
+        it 'can go backward in same direction' do
+            eye_x = -1
+            eye_y = 0
+            eva = Robot.new
+            directions = 'b'
+
+            eva.move(directions)
+            position = eva.position
+
+            expect(position).to eq [eye_x,eye_y]
         end 
     end
 end
