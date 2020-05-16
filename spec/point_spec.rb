@@ -27,13 +27,13 @@ describe 'Point' do
             expect(position).to eq next_position
         end
 
-        it 'backward go back one position' do
+        it 'decreasing eye y' do
             eye_x = 0
             eye_y = -1
             next_position = [eye_x,eye_y]
             point = Point.new
 
-            point.backward
+            point.decrease_y
             position = point.position
 
             expect(position).to eq next_position
