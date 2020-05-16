@@ -15,7 +15,7 @@
 
 - Blog | enfamilialohacemosmejor [go..](https://enfamilialohacemosmejor.blogspot.com/)
 
-# ACT
+# 🦾ACT
 
 ## Mars Eva Kata
 - 💎 Ruby and RSpec
@@ -25,13 +25,13 @@
 You’re part of the team that explores Mars by sending remotely controlled vehicles  to the surface of the planet. Develop an API that translates the commands sent from earth to instructions that are understood by Eva.
 
 ## Requirements
-- 🕹️ Given the initial starting point (x,y) of a Eva and the direction (Nort,South,East,West) it is facing.
-- 📡 Eva receives a character array of commands.
+- 🕹️ Given the initial starting point (0,0) of a Eva and the direction (N) it is facing.
+- 📡 Eva receives a character array of commands(f,b,r,l).
 - 👆👇 Implement commands that move Eva forward/backward.
 - 👈👉 Implement commands that turn Eva left/right.
 - 🌎 Implement wrapping from one edge of grid to another. (planets are spheres after all)
 
-# ASSERT
+# 💃 ASSERT
 ## Running Specs
 ```Console
 $ rspec
