@@ -27,5 +27,18 @@ describe 'North' do
 
             expect(position).to eq next_position
         end
+
+        it 'left decrease eye x' do
+            eye_x = -1
+            eye_y = 0
+            next_position = [eye_x,eye_y]
+            point = Point.new
+            north = North.new(point)
+            
+            point = north.left
+            position = point.position
+
+            expect(position).to eq next_position
+        end
     end
 end
