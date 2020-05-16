@@ -17,4 +17,9 @@ class South
         @point.increase_x
         @point
     end
+
+    def right
+        @point.decrease_x
+        @point
+    end
 end

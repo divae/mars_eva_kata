@@ -40,5 +40,18 @@ describe 'South' do
 
             expect(position).to eq next_position
         end
+        
+        it 'right decrease eye x' do
+            eye_x = -1
+            eye_y = 0
+            next_position = [eye_x,eye_y]
+            point = Point.new
+            south = South.new(point)
+           
+            point = south.right
+            position = point.position
+
+            expect(position).to eq next_position
+        end
     end
 end
