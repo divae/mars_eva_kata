@@ -15,13 +15,13 @@ describe 'Point' do
     end
 
     context 'when change' do
-        it 'forward advance one position' do
+        it 'increasing eye y' do
             eye_x = 0
             eye_y = 1
             next_position = [eye_x,eye_y]
             point = Point.new
 
-            point.forward
+            point.increase_y
             position = point.position
 
             expect(position).to eq next_position

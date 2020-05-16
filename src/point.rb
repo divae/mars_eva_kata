@@ -4,10 +4,6 @@ class Point
         @eye_y = 0
     end
 
-    def forward
-        increase_y
-    end
-
     def backward
         decrease_y
     end
