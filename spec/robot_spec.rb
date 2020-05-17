@@ -4,7 +4,7 @@ require './src/direction'
 
 describe 'Robot' do
     context 'when created' do
-        it 'is in position 0.0 direction north' do
+        it 'is in position 0.0 direction north and there can only be one in the world ' do
             point = Point.new
             cardinal_point = Direction.new
             eva = Robot.new
