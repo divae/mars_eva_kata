@@ -1,4 +1,4 @@
-require './lib/coordenate/east'
+require './lib/coordinate/east'
 
 describe 'East' do
     context 'when move to' do

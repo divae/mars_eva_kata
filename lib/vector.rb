@@ -2,7 +2,7 @@ class Vector
     def initialize()
         @point = Point.new
         @direction = 'N'
-        @coordenate = North.new(@point)
+        @coordinate = North.new(@point)
     end
     def position
         @point.position
@@ -14,21 +14,21 @@ class Vector
         vectors.each do |vector|
             case vector
             when 'N'
-                @coordenate = North.new(@point)
+                @coordinate = North.new(@point)
             when 'S'
-                @coordenate = South.new(@point)
+                @coordinate = South.new(@point)
             when 'E'
-                @coordenate = East.new(@point)
+                @coordinate = East.new(@point)
             when 'W'
-                @coordenate = West.new(@point)
+                @coordinate = West.new(@point)
             when 'f'
-                @point = @coordenate.forward
+                @point = @coordinate.forward
             when 'b'
-                @point = @coordenate.backward
+                @point = @coordinate.backward
             when 'l'
-                @point = @coordenate.left
+                @point = @coordinate.left
             when 'r'
-                @point = @coordenate.right
+                @point = @coordinate.right
             end
         end
     end
