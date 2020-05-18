@@ -1,19 +1,17 @@
 require './lib/robot'
-require './lib/point'
 require './lib/vector'
 
 describe 'Robot' do
     context 'when created' do
         it 'is in position 0.0 direction north and there can only be one in the world ' do
-            point = Point.new
-            cardinal_point = Vector.new
+            vector = Vector.new
             eva = Robot.new
 
             position = eva.position
             direction = eva.direction
 
-            expect(position).to eq point.position
-            expect(direction).to eq cardinal_point.cardinal
+            expect(position).to eq vector.position
+            expect(direction).to eq vector.direction
         end
     end
 
@@ -22,9 +20,9 @@ describe 'Robot' do
             axis_x = 0
             axis_y = 1
             eva = Robot.new
-            directions = ['f']
+            vectors = ['f']
 
-            eva.move(directions)
+            eva.move(vectors)
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]
@@ -34,9 +32,9 @@ describe 'Robot' do
             axis_x = 0
             axis_y = -1
             eva = Robot.new
-            directions = ['b']
+            vectors = ['b']
 
-            eva.move(directions)
+            eva.move(vectors)
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]
@@ -46,9 +44,9 @@ describe 'Robot' do
             axis_x = -1
             axis_y = 0
             eva = Robot.new
-            directions = ['l']
+            vectors = ['l']
 
-            eva.move(directions)
+            eva.move(vectors)
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]
@@ -58,22 +56,22 @@ describe 'Robot' do
             axis_x = 1
             axis_y = 0
             eva = Robot.new
-            directions = ['r']
+            vectors = ['r']
 
-            eva.move(directions)
+            eva.move(vectors)
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]
         end
 
         
-        it 'various positions multiple stored positions' do
+        it 'various positions' do
             axis_x = 0
             axis_y = -2
             eva = Robot.new
-            directions = ['b','b']
+            vectors = ['b','b']
 
-            eva.move(directions)
+            eva.move(vectors)
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]

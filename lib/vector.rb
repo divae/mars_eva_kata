@@ -1,14 +1,14 @@
 class Vector
     def initialize()
         @point = Point.new
-        @cardinal = 'N'
+        @direction = 'N'
         @coordenate = North.new(@point)
     end
     def position
         @point.position
     end
-    def cardinal
-        @cardinal
+    def direction
+        @direction
     end
     def change(vectors)            
         vectors.each do |vector|

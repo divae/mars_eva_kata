@@ -1,17 +1,17 @@
 class Robot
     def initialize
-        @direction = Vector.new
+        @vector = Vector.new
     end
     
-    def move(directions)
-        @direction.change(directions)
+    def move(vectors)
+        @vector.change(vectors)
     end
 
     def position
-        @direction.position
+        @vector.position
     end
 
     def direction
-        @direction.cardinal
+        @vector.direction
     end
 end
