@@ -4,9 +4,6 @@ class Vector
         @cardinal = 'N'
         @coordenate = North.new(@point)
     end
-    def actually
-        @cardinal
-    end
     def position
         @point.position
     end
