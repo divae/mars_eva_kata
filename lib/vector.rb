@@ -2,7 +2,7 @@ class Vector
     def initialize()
         @point = Point.new
         @cardinal = 'N'
-        @direction = North.new(@point)
+        @coordenate = North.new(@point)
     end
     def actually
         @cardinal
@@ -13,25 +13,25 @@ class Vector
     def cardinal
         @cardinal
     end
-    def change(directions)            
-        directions.each do |direction|
-            case direction
+    def change(vectors)            
+        vectors.each do |vector|
+            case vector
             when 'N'
-                @direction = North.new(@point)
+                @coordenate = North.new(@point)
             when 'S'
-                @direction = South.new(@point)
+                @coordenate = South.new(@point)
             when 'E'
-                @direction = East.new(@point)
+                @coordenate = East.new(@point)
             when 'W'
-                @direction = West.new(@point)
+                @coordenate = West.new(@point)
             when 'f'
-                @point = @direction.forward
+                @point = @coordenate.forward
             when 'b'
-                @point = @direction.backward
+                @point = @coordenate.backward
             when 'l'
-                @point = @direction.left
+                @point = @coordenate.left
             when 'r'
-                @point = @direction.right
+                @point = @coordenate.right
             end
         end
     end
