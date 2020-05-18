@@ -1,5 +1,5 @@
-require './src/game'
-require './src/robot'
+require './lib/game'
+require './lib/robot'
 
 describe 'Game Mars eva Word' do
     

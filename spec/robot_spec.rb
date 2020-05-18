@@ -1,6 +1,6 @@
-require './src/robot'
-require './src/point'
-require './src/direction'
+require './lib/robot'
+require './lib/point'
+require './lib/direction'
 
 describe 'Robot' do
     context 'when created' do

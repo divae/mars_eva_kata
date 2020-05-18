@@ -1,4 +1,4 @@
-require './src/direction/east'
+require './lib/direction/east'
 
 describe 'East' do
     context 'when move to' do

@@ -1,5 +1,5 @@
-require './src/direction'
-require './src/point'
+require './lib/direction'
+require './lib/point'
 
 describe 'Direction' do
     context 'when created' do

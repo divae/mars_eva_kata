@@ -1,4 +1,4 @@
-require './src/point'
+require './lib/point'
 
 describe 'Point' do
     context 'when created' do
