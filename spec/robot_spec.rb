@@ -1,5 +1,5 @@
-require './lib/robot'
-require './lib/vector'
+require 'robot'
+require 'vector'
 
 describe 'Robot' do
     context 'when created' do

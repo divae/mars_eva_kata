@@ -1,5 +1,5 @@
-require './lib/vector'
-require './lib/point'
+require 'vector'
+require 'point'
 
 describe 'Vector' do
     context 'when created' do

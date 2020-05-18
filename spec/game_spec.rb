@@ -1,5 +1,5 @@
-require './lib/game'
-require './lib/robot'
+require 'game'
+require 'robot'
 
 describe 'Game Mars eva Word' do
     
