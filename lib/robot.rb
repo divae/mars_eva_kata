@@ -1,6 +1,6 @@
 class Robot
     def initialize
-        @direction = Direction.new
+        @direction = Vector.new
     end
     
     def move(directions)

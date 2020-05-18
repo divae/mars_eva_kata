@@ -1,12 +1,12 @@
 require './lib/robot'
 require './lib/point'
-require './lib/direction'
+require './lib/vector'
 
 describe 'Robot' do
     context 'when created' do
         it 'is in position 0.0 direction north and there can only be one in the world ' do
             point = Point.new
-            cardinal_point = Direction.new
+            cardinal_point = Vector.new
             eva = Robot.new
 
             position = eva.position

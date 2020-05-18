@@ -1,4 +1,4 @@
-class Direction
+class Vector
     def initialize()
         @point = Point.new
         @cardinal = 'N'
