@@ -13,7 +13,8 @@ describe 'Game Mars eva Word' do
             expect(maria).to be eva
         end
     end
-    context 'Eva can move around the world' do
+    context 'Robots can move around the world' do
+        it 'Eva walking' do
             game = Game.new
             vectors = ['f','f','S','f','f','E','f','W','b']
             axis_x = 2
@@ -25,6 +26,7 @@ describe 'Game Mars eva Word' do
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]
+        end
     end
 
 end
