@@ -13,7 +13,7 @@ describe 'Robot' do
             direction = eva.direction
 
             expect(position).to eq point.position
-            expect(direction).to eq cardinal_point.actually
+            expect(direction).to eq cardinal_point.cardinal
         end
     end
 

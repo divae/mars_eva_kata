@@ -7,7 +7,7 @@ describe 'Direction' do
             cardinal_point = 'N'
             direction = Direction.new
 
-            direction_actually = direction.actually
+            direction_actually = direction.cardinal
 
             expect(direction_actually).to eq cardinal_point
         end

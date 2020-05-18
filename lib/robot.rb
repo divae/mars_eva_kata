@@ -12,6 +12,6 @@ class Robot
     end
 
     def direction
-        @direction.actually
+        @direction.cardinal
     end
 end

@@ -9,9 +9,6 @@ class Direction
         @cardinal = 'N'
         @direction = North.new(@point)
     end
-    def actually
-        @cardinal
-    end
     def position
         @point.position
     end
