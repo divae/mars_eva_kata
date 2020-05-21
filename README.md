@@ -60,3 +60,6 @@ You’re part of the team that explores Mars by sending remotely controlled vehi
 $ rspec
 ```
 
+## Next Steps
+- Change method "change" in Vector classes, I think it would be good to apply the command pattern to simplify that code and make it clearer.
+- An interface for the address classes would ensure that they all have the same methods.
