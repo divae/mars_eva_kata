@@ -21,6 +21,21 @@
 - 💎 Ruby and RSpec with Bundle.
 - 🎯 I will use some of the requeriments of Kata-log Website [(go)](https://kata-log.rocks/mars-rover-kata)
 
+## The world
+
+                ------------------------------------
+                -2, 2 | -1, 2 | 0, 2 |  1, 2 |  2, 2 
+    -+          ------------------------------------      ++
+                -2, 1 | -1, 1 | 0, 1 |  1, 1 |  2, 2
+                ------------------------------------
+                -2, 0 | -1, 0 | 0, 0 |  1, 0 |  2, 0 
+                ------------------------------------
+                -2,-1 | -1,-1 | 0,-1 |  1,-1 |  2,-2
+    --          ------------------------------------      +-
+                -2,-2 | -1,-2 | 0,-2 |  1,-2 |  2,-2 
+
+
+
 ## Task
 You’re part of the team that explores Mars by sending remotely controlled vehicles  to the surface of the planet. Develop an API that translates the commands sent from earth into instructions that are understood by Eva.
 
