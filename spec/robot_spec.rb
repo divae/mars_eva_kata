@@ -2,8 +2,8 @@ require 'robot'
 require 'vector'
 
 describe 'Robot' do
-    context 'when created' do
-        it 'is in position 0.0 direction north and there can only be one in the world ' do
+    context 'when is created' do
+        it 'is origin position 0.0 facing north ' do
             vector = Vector.new
             eva = Robot.new
 
@@ -15,7 +15,7 @@ describe 'Robot' do
         end
     end
 
-    context 'knows how looking north to move' do
+    context 'knows how to move arond the world' do
         it 'forward' do
             axis_x = 0
             axis_y = 1
@@ -63,18 +63,19 @@ describe 'Robot' do
 
             expect(position).to eq [axis_x,axis_y]
         end
+    end
 
-        
-        it 'various positions' do
+    context 'knows how to change its direction' do
+        it 'south' do
             axis_x = 0
-            axis_y = -2
+            axis_y = 0
             eva = Robot.new
-            vectors = ['b','b']
+            vectors = ['b','S','b']
 
             eva.move(vectors)
             position = eva.position
 
             expect(position).to eq [axis_x,axis_y]
-        end 
+        end
     end
 end
