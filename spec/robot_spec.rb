@@ -94,7 +94,19 @@ describe 'Robot' do
             axis_x = -1
             axis_y = -1
             eva = Robot.new
-            vectors = ['b','E','b']
+            vectors = ['l','E','r']
+
+            eva.move(vectors)
+            position = eva.position
+
+            expect(position).to eq [axis_x,axis_y]
+        end
+
+        it 'North' do
+            axis_x = 2
+            axis_y = -1
+            eva = Robot.new
+            vectors = ['b','E','f','N','r']
 
             eva.move(vectors)
             position = eva.position
