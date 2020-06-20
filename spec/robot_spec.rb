@@ -77,5 +77,17 @@ describe 'Robot' do
 
             expect(position).to eq [axis_x,axis_y]
         end
+
+        it 'west' do
+            axis_x = 1
+            axis_y = -1
+            eva = Robot.new
+            vectors = ['b','W','b']
+
+            eva.move(vectors)
+            position = eva.position
+
+            expect(position).to eq [axis_x,axis_y]
+        end
     end
 end
