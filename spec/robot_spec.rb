@@ -16,7 +16,7 @@ describe 'Robot' do
     end
 
     context 'knows how to move arond the world' do
-        it 'forward' do
+        it 'Forward' do
             axis_x = 0
             axis_y = 1
             eva = Robot.new
@@ -28,7 +28,7 @@ describe 'Robot' do
             expect(position).to eq [axis_x,axis_y]
         end 
 
-        it 'backward' do
+        it 'Backward' do
             axis_x = 0
             axis_y = -1
             eva = Robot.new
@@ -40,7 +40,7 @@ describe 'Robot' do
             expect(position).to eq [axis_x,axis_y]
         end
 
-        it 'left' do
+        it 'Left' do
             axis_x = -1
             axis_y = 0
             eva = Robot.new
@@ -52,7 +52,7 @@ describe 'Robot' do
             expect(position).to eq [axis_x,axis_y]
         end
 
-        it 'right' do
+        it 'Right' do
             axis_x = 1
             axis_y = 0
             eva = Robot.new
@@ -66,7 +66,7 @@ describe 'Robot' do
     end
 
     context 'knows how to change its direction' do
-        it 'south' do
+        it 'South' do
             axis_x = 0
             axis_y = 0
             eva = Robot.new
@@ -78,11 +78,23 @@ describe 'Robot' do
             expect(position).to eq [axis_x,axis_y]
         end
 
-        it 'west' do
+        it 'West' do
             axis_x = 1
             axis_y = -1
             eva = Robot.new
             vectors = ['b','W','b']
+
+            eva.move(vectors)
+            position = eva.position
+
+            expect(position).to eq [axis_x,axis_y]
+        end
+
+        it 'East' do
+            axis_x = -1
+            axis_y = -1
+            eva = Robot.new
+            vectors = ['b','E','b']
 
             eva.move(vectors)
             position = eva.position
