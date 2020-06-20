@@ -1,17 +1,31 @@
 require 'robot'
-require 'vector'
 
 describe 'Robot' do
     context 'when is created' do
-        it 'is origin position 0.0 facing north ' do
-            vector = Vector.new
+        it 'is origin position 0.0 facing north' do
             eva = Robot.new
+            origin_position = [0,0]
+            origin_direction = 'N'
 
             position = eva.position
             direction = eva.direction
 
-            expect(position).to eq vector.position
-            expect(direction).to eq vector.direction
+            expect(position).to eq origin_position
+            expect(direction).to eq origin_direction
+        end
+    end
+
+    xcontext 'when recive incorrect command' do
+        xit 'returns to origin position' do
+            axis_x = 0
+            axis_y = 0
+            eva = Robot.new
+            vectors = ['f','a','l']
+
+            eva.move(vectors)
+            position = eva.position
+
+            expect(position).to eq [axis_x,axis_y]
         end
     end
 
